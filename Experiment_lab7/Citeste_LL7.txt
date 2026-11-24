@@ -1,0 +1,21 @@
+LL7 - Crearea executabilului Windows pentru Hangar
+
+Verificarea lucrarii
+1. Extrage arhiva si deschide folderul Executabil.
+2. Langa Hangar.exe se gaseste config.ini. Verifica host, port, dbname si user.
+3. Porneste Hangar.exe si introdu parola PostgreSQL la cerere.
+Hangar.exe include Python si dependentele aplicatiei. Pentru testare este
+necesar un server PostgreSQL accesibil. Poti folosi baza de date creata
+la LL6 sau poti crea o baza noua cu utilizatorul configurat ca proprietar,
+din pgAdmin sau prin configurare_postgresql.py din surse.
+
+Reconstruirea executabilului
+1. Deschide folderul Experiment_lab7 pe Windows.
+2. Cu Python 3.11-3.13, Tkinter si internet disponibile, porneste
+   Construieste_LL7.bat. Acesta instaleaza dependentele si ruleaza PyInstaller.
+3. Pachetul complet, cu o singura copie a executabilului, este creat la
+   Livrare\LL7_Hangar_Optimizat.zip. Pentru a rula executabilul reconstruit,
+   extrage folderul Executabil din acel ZIP.
+Mediul virtual si fisierele de compilare sunt create temporar si eliminate
+la terminarea construirii. Decodorul AVIF este exclus din executabil;
+fotografiile din proiect sunt JPEG, iar graficele folosesc Matplotlib.
